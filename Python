@@ -1,0 +1,16 @@
+# Company Profit Calculator
+
+# Input
+revenue = float(input("Enter total revenue: "))
+expenses = float(input("Enter total expenses: "))
+
+# Calculation
+profit = revenue - expenses
+
+# Output
+if profit > 0:
+    print(f"Profit: ${profit:.2f}")
+elif profit < 0:
+    print(f"Loss: ${abs(profit):.2f}")
+else:
+    print("No profit, no loss. Break-even point.")
